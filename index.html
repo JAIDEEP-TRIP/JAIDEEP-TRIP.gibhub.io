@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jaideep Tripurani</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Jaideep Tripurani</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Jaideep Tripurani</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Full Stack Developer  ',
+						'Devops Engineer  ',
+						'Cloud-Native Engineer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Software Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/jaideep-tripurani/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/About_me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Jaideep Tripurani</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Full Stack Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>3 Years 2 months</span></p>
+										<p><span class="title-s">Address: </span> <span>illinois United States</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+  <p class="title-s">Skills</p>
+  <ul class="skills-description">
+    <li><strong>Languages & Frontend:</strong> Java, Python, JavaScript, HTML, CSS, C, C++, SQL</li>
+    <li><strong>Frameworks & Backend:</strong> Spring Boot, Django, REST API, GraphQL, JWT, React.js</li>
+    <li><strong>Tools & DevOps:</strong> Git, Docker, Jenkins, GitLab CI/CD, Terraform, Bash, Shell Scripting</li>
+    <li><strong>Cloud & Databases:</strong> AWS (EC2, ECS, S3, Lambda, RDS, IAM), PostgreSQL, MySQL, MongoDB, Oracle, Linux</li>
+    <li><strong>AI/ML:</strong> TensorFlow, Keras, scikit-learn, NLP (spaCy, NLTK), Transformers, GANs, Pandas, NumPy, Seaborn, Matplotlib</li>
+    <li><strong>Other Tools:</strong> Tableau, Microsoft 365, Google Slides, Canva</li>
+    <li><strong>Certifications:</strong> AWS Cloud Practitioner, DevOps Foundations, TensorFlow Developer, Python For Everybody</li>
+  </ul>
+</div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>
+									With hands-on experience across software development, data engineering, and applied machine learning, I bring a well-rounded technical background grounded in both academic research and industry practice. Currently pursuing my Master’s in Computer Science at the University of North Texas, I’ve worked on impactful projects ranging from building scalable full-stack applications to deploying predictive models that improve student accessibility and engagement.
+									My strengths lie in combining backend engineering with data analytics, having deployed applications using Java, Spring Boot, React.js, Kafka, and AWS, and implemented data pipelines and dashboards with Python, SQL, and Tableau. I’m deeply passionate about using technology to solve real-world problems, with an emphasis on automation, accessibility, and performance optimization.
+									Outside the classroom and code, I lead with initiative and creativity — serving as the Coverage Head for the Photography and Cinematography Club, and as the Captain of the university Badminton Team. These leadership roles reflect my ability to manage teams, organize events, and communicate effectively both on and off the court.
+									</p>
+									
+							
+									
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="15">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/jaideep-tripurani/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+		  <!-- Resume Header -->
+		  <div class="row justify-content-center pb-5">
+			<div class="col-md-10 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Resume</h1>
+			  <h2 class="mb-4">Resume</h2>
+			  <p>Hands-on expertise in Java, Python, Kafka, AWS, and SQL with a proven track record of optimizing systems, automating pipelines, and generating actionable insights from large datasets.</p>
+			</div>
+		  </div>
+	  
+		  <!-- Experience Section -->
+		  <div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		  </div>
+		  <br>
+	  
+		  <div class="row">
+	  
+			<!-- UNT Research Assistant -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">Aug 2023 – May 2025</span>
+				<h2>Research Assistant (Accessibility Analytics)</h2>
+				<span class="position">University of North Texas, Denton, TX</span>
+				<p class="mt-4">
+				  <ul>
+					<li>Developed and deployed 4+ ML models to detect accessibility gaps and forecast student performance, improving intervention targeting by 30%.</li>
+					<li>Analyzed 10,000+ student records using Python, SQL, R, and Tableau to create dashboards adopted by 3 university departments.</li>
+					<li>Applied NLP and image recognition to assess 200+ digital materials, increasing ADA compliance by 25%.</li>
+					<li>Collaborated with institutional DEI teams to align ML insights with academic policy changes across 5 programs.</li>
+				  </ul>
+				</p>
+			  </div>
+			</div>
+	  
+			<!-- DWP Global Corp -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">Jan 2022 – Jul 2023</span>
+				<h2>Software Developer</h2>
+				<span class="position">DWP Global Corp, India</span>
+				<p class="mt-4">
+				  <ul>
+					<li>Built 3+ scalable web apps with Java, Spring Boot, and React.js using Clean Architecture and SOLID principles, reducing maintenance overhead by 40%.</li>
+					<li>Developed Kafka-based microservices with &lt;50 ms latency through idempotent producer-consumer logic.</li>
+					<li>Automated CI/CD pipelines using GitLab CI, Docker, and AWS ECS, reducing deployment time by 60%.</li>
+					<li>Deployed 5+ cloud-native solutions using Terraform, Lambda, EC2, S3, RDS, and MongoDB Atlas with secure IAM practices.</li>
+					<li>Contributed to 10+ Agile sprints, leading 20+ peer code reviews with a 95% acceptance rate.</li>
+				  </ul>
+				</p>
+			  </div>
+			</div>
+	  
+			<!-- Areksoft Internship -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">May 2021 – Jul 2021</span>
+				<h2>Web Development Intern</h2>
+				<span class="position">Areksoft Technologies Pvt. Ltd., India (Hybrid)</span>
+				<p class="mt-4">
+				  <ul>
+					<li>Created responsive web pages using HTML, CSS, and JavaScript to enhance UI functionality.</li>
+					<li>Collaborated on a recipe web project that improved productivity and reduced delivery time by 30%.</li>
+					<li>Led UI/UX enhancements that increased engagement by 20% through optimized search features.</li>
+				  </ul>
+				</p>
+			  </div>
+			</div>
+	  
+			<!-- IFORTIS Marketing Intern -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">Jun 2021 – Aug 2021</span>
+				<h2>Marketing and Sales Analyst</h2>
+				<span class="position">IFORTIS Worldwide™, Remote – India</span>
+				<p class="mt-4">
+				  <ul>
+					<li>Developed brand-aligned marketing content to enhance campaign effectiveness across digital platforms.</li>
+					<li>Supported integrated marketing strategy and campaign execution to drive engagement.</li>
+					<li>Performed segmentation analysis and refined targeting to improve consumer response quality.</li>
+				  </ul>
+				</p>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Leadership Roles Section -->
+		  <div class="row mt-5">
+			<h1 class="big-4">Leadership Roles</h1>
+			<div class="underline"></div>
+		  </div>
+		  <br>
+	  
+		  <div class="row">
+	  
+			<!-- Photography Club -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">Dec 2019 - May - 2022 – </span>
+				<h2>Coverage Head – Photography & Cinematography Club</h2>
+				<span class="position">University of North Texas, Denton, TX</span>
+				<p class="mt-4">
+				  <ul>
+					<li>Led coverage for 10+ major university events annually through photography and video production.</li>
+					<li>Directed creative planning, editing, and publishing of visual media to boost campus visibility.</li>
+				  </ul>
+				</p>
+			  </div>
+			</div>
+	  
+			<!-- Badminton Team -->
+			<div class="col-md-6">
+			  <div class="resume-wrap ftco-animate">
+				<span class="date">Dec 2020 - Dec 2021 </span>
+				<h2>Captain – Badminton Team</h2>
+				<span class="position">University of North Texas, Denton, TX</span>
+				<p class="mt-4">
+				  <ul>
+					<li>Organized training sessions, match strategies, and team participation in inter-collegiate tournaments.</li>
+					<li>Promoted sportsmanship and unity while representing UNT in regional competitions.</li>
+				  </ul>
+				</p>
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </section>
+	  
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2022</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Bml Munjal University</span>
+    					<p class="mt-4">CGPA : 8.1</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2025</span>
+    					<h2>M.S in Computer Science</h2>
+    					<span class="position">University Of North Texas</span>
+    					<p class="mt-4">GPA : 3.71</p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+				  <p>
+					<a href="Jaideep_resume.pdf" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a>
+				  </p>
+				</div>
+			  </div>
+			  
+			  
+
+   
+
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Below are my key academic and personal projects involving Data Analytics, ML, SQL, and Full Stack Development.</p>
+      </div>
+    </div>
+
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">Predicting and Improving Online Course Accessibility Using ML</h3>
+            <p>Built an 87% accurate Random Forest model using Python and SQL to identify accessibility risks in online courses. Applied NLP (spaCy, NLTK) to 500+ documents and visualized insights in Tableau dashboards. Collaborated with instructional designers to implement course improvements.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">SkillSync – AI-Powered Course & Mentor Matching Platform</h3>
+            <p>Developed a Spring Boot + React.js platform with Kafka and a Python ML model (92% accuracy) to match mentors with students. Deployed on AWS ECS with PostgreSQL and MongoDB. Enhanced user trust and reduced manual effort by 70%.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">Autozone Inventory & Sales Database System</h3>
+            <p>Designed and implemented a robust Oracle database system for Autozone using SQL and PL/SQL. Handled inventory, sales, and employee data with advanced relational schemas, improving data efficiency and consistency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">Big Five Personality Prediction Using ML</h3>
+            <p>Utilized Twitter data to predict personality traits with 85% accuracy using SVM, Random Forest, and Naive Bayes. Feature selection with Pearson and Chi-squared tests. Built using Python, NumPy, Pandas, and scikit-learn.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Chicago, USA</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+1 3462365831</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p>jaideeptripurani12@gmail.com</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <a href="Jaideep_resume.pdf" target="_blank">Resume link</a>
+	          </div>
+          </div>
+
+		
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
